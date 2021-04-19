@@ -19,7 +19,7 @@ fs.mkdir(dir,(err)=> {
   console.log("Directory is created.");
 });
        // writing to the file posts.json  
-fs.writeFile('./result/posts.json',JSON.stringify(json), function (err) {
+fs.writeFile('./result/posts.json',JSON.stringify(json,null,2), function (err) {
   if (err) return console.log(err);
   console.log(JSON.stringify(json) > 'posts.json');
 
